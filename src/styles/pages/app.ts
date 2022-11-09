@@ -22,7 +22,11 @@ export const Header = styled('header', {
     }
   },
 
-  button: {
+  '.contact': {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+
     padding: '0.2rem 1.5rem',
     color: '$white',
     backgroundColor: '$purple500',

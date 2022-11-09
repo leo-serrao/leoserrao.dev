@@ -15,20 +15,11 @@ import {
 
 import { IoIosArrowForward } from 'react-icons/io'
 import { IoIosArrowUp } from 'react-icons/io'
-import { AiOutlineMail } from 'react-icons/ai'
-import { AiFillLinkedin } from 'react-icons/ai'
-import { FaGithubSquare } from 'react-icons/fa'
 
 import introImg from '../assets/introductionIlustration/intro.svg'
+
 import javascriptIcon from '../assets/skills/javascript.svg'
 import typescriptIcon from '../assets/skills/typescript.svg'
-import backgroundVector from '../assets/footer/backgroundVector.svg'
-import quotation from '../assets/footer/quotation.svg'
-import viewMore from '../assets/showcase/viewMore.svg'
-import device1 from '../assets/showcase/device1.svg'
-import circle3 from '../assets/showcase/circle3.svg'
-import circle2 from '../assets/showcase/circle2.svg'
-import circle from '../assets/showcase/circle.svg'
 import english from '../assets/skills/english.png'
 import reactIcon from '../assets/skills/react.svg'
 import htmlIcon from '../assets/skills/html.svg'
@@ -36,11 +27,18 @@ import planet from '../assets/skills/planet.png'
 import cssIcon from '../assets/skills/css.svg'
 import dots from '../assets/skills/dots.svg'
 
-import planet1 from '../assets/contactForm/planet1.svg'
-import planet2 from '../assets/contactForm/planet2.svg'
-import planet3 from '../assets/contactForm/planet3.svg'
+import viewMore from '../assets/showcase/viewMore.svg'
+import circle3 from '../assets/showcase/circle3.svg'
+import circle2 from '../assets/showcase/circle2.svg'
+import circle from '../assets/showcase/circle.svg'
 
-import { Contact, ContactContainer } from '../components/contact'
+import dtMoneyBackground2 from '../assets/projects/dt-money-background2.svg'
+import dtMoneyDevice from '../assets/projects/dt-money-device.svg'
+import igniteShop from '../assets/projects/ignite-shop.svg'
+
+import quotationPurple from '../assets/footer/quotation-purple.svg'
+
+import ContactForm from '../components/contact/contacts'
 
 export default function Home() {
   return (
@@ -65,7 +63,7 @@ export default function Home() {
               collaborate with you!
             </p>
 
-            <button>Hire Me</button>
+            <a href="#contact">Hire Me</a>
           </Info>
           <Illustration>
             <Image src={introImg} alt="" width={600} height={600} />
@@ -167,20 +165,32 @@ export default function Home() {
               <div className="card">
                 <header>
                   <div>
-                    <h1>Título do Projeto</h1>
+                    <h1>Financial Manager</h1>
                     <p>Personal Project | Web Design</p>
                   </div>
                   <a href="/projects">
                     <IoIosArrowForward className="arrow-icon" />
                   </a>
                 </header>
-                <Image src={device1} alt="device1" width={483} height={292} />
+                <Image
+                  src={dtMoneyDevice}
+                  alt="device1"
+                  width={483}
+                  height={292}
+                />
+                <Image
+                  src={dtMoneyBackground2}
+                  alt="device1"
+                  width={607}
+                  height={591}
+                  className="dt-money-background"
+                />
               </div>
 
               <div className="card two">
                 <header>
                   <div>
-                    <h1>Título do Projeto</h1>
+                    <h1>T-Shirt Shop</h1>
                     <p>Personal Project | Web Design</p>
                   </div>
                   <a href="/projects">
@@ -194,7 +204,12 @@ export default function Home() {
                   height={450}
                   className="background-circle"
                 />
-                <Image src={device1} alt="device1" width={483} height={292} />
+                <Image
+                  src={igniteShop}
+                  alt="device1"
+                  width={483}
+                  height={292}
+                />
               </div>
             </div>
             <div className="view-more">
@@ -217,92 +232,12 @@ export default function Home() {
           />
         </Showcase>
 
-        <Contact>
-          <ContactContainer>
-            <div className="info">
-              <span>Contact Me</span>
-              <h1>Let's Get in Touch.</h1>
-
-              <p className="feel-free-message">
-                Feel free to reach out for collaborations or just a friendly
-                hello!
-              </p>
-
-              <div className="contact-info first">
-                <AiOutlineMail className="contact-icon" />
-                <p>leoserraom@gmail.com</p>
-              </div>
-              <div className="contact-info">
-                <FaGithubSquare className="contact-icon" />
-                <a
-                  href="https://github.com/leo-serrao"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  My Github
-                </a>
-              </div>
-              <div className="contact-info">
-                <AiFillLinkedin className="contact-icon" />
-                <a
-                  href="https://www.linkedin.com/in/leonardo-serrão-171332104/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  My Linkedin
-                </a>
-              </div>
-            </div>
-
-            <div className="form-container">
-              <Image
-                src={planet1}
-                alt="html5"
-                width={623}
-                height={553}
-                className="big-planet"
-              />
-              <Image
-                src={planet2}
-                alt="html5"
-                width={152}
-                height={173}
-                className="small-planet-1"
-              />
-              <Image
-                src={planet3}
-                alt="html5"
-                width={102}
-                height={133}
-                className="small-planet-2"
-              />
-
-              <form action="">
-                <input type="text" name="name" id="name" placeholder="Name" />
-                <input
-                  type="text"
-                  name="email"
-                  id="email"
-                  placeholder="Email"
-                />
-                <textarea
-                  name="message"
-                  id="message"
-                  cols={30}
-                  rows={10}
-                  placeholder="Message"
-                />
-
-                <button>Lets' talk!</button>
-              </form>
-            </div>
-          </ContactContainer>
-        </Contact>
+        <ContactForm />
 
         <Footer>
           <div className="quote">
             <Image
-              src={quotation}
+              src={quotationPurple}
               alt="quotation marks"
               width={158}
               height={124}
@@ -310,9 +245,9 @@ export default function Home() {
             />
 
             <p>
-              Great things happen to those who don't stop <span>believing</span>
-              , <span>trying</span>, <span>learning</span>, and being
-              <span> grateful</span>.
+              <span>Programmer</span>, an organism that turns
+              <span> coffee</span> into
+              <span> software</span>.
             </p>
 
             <span className="copyright">

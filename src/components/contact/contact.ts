@@ -1,11 +1,90 @@
 import { keyframes, styled } from "@stitches/react";
 
+const slidein = keyframes({
+  '0%': {
+    transform: 'translatex(30rem)',
+  },
+  '100%': {
+    transform: 'translatex(0)',
+  },
+});
+
+const slideout = keyframes({
+  '0%': {
+    transform: 'translatex(0rem)',
+  },
+  '100%': {
+    transform: 'translatex(30rem)',
+  },
+});
+
+const tictac = keyframes({
+  '0%': {
+    width: '100%',
+  },
+  '100%': {
+    width: '0',
+  },
+});
+
 export const Contact = styled('div', {
   display: 'flex',
   alignItems: 'center',
   justifyContent: 'center',
   width: '100%',
   marginBottom: '5rem',
+  position: 'relative',
+
+  '.message': {
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'center',
+    alignItems: 'left',
+    backgroundColor: '$white',
+    color: '$purple500',
+
+    position: 'absolute',
+    top: '20rem',
+
+    padding: '1.5rem',
+    borderRadius: 8,
+    width: '15rem',
+    
+
+    '.progress-bar': {
+      width: '100%',
+      backgroundColor: '$purple500',
+      height: '0.5rem',
+      borderRadius: 30,
+      marginTop: '1rem',
+    }
+  },
+
+  '.active': {
+    right: '-9rem',
+    animation: `${slidein} 1s`,
+
+    '.progress-bar': {
+      animation: `${tictac} 5s`,
+    }
+  },
+
+  '.inactive': {
+    right: '-30rem',
+    animation: `${slideout} 1s`,
+  },
+
+  '.fail': {
+    color: 'red',
+    
+    h2: {
+      fontSize: '$md',
+    }, 
+    
+    '.progress-bar': {
+      backgroundColor: 'red',
+    }
+  }
 });
 
 const levitate = keyframes({
@@ -122,6 +201,11 @@ export const ContactContainer = styled('div', {
       flexDirection: 'column',
       marginTop: '24rem',
       alignItems: 'left',
+
+      p: {
+        color: 'red',
+        marginBottom: '1rem',
+      },
 
       input: {
         border: 'none',

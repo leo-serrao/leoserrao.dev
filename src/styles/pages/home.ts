@@ -55,10 +55,10 @@ export const Info = styled('div', {
   p: {
     maxWidth: 500,
     marginTop: '1rem',
+    marginBottom: '5rem',
   },
 
-  button: {
-    marginTop: '5rem',
+  a: {
     fontSize: '$md',
     padding: '0.5rem 1.5rem',
     color: '$white',
@@ -266,6 +266,7 @@ export const ShowcaseContainer = styled('div', {
       borderRadius: 30,
       padding: '2rem 3rem',
       position: 'relative',
+      overflow: 'hidden',
 
       header: {
         width: '100%',
@@ -292,6 +293,13 @@ export const ShowcaseContainer = styled('div', {
       img: {
         marginBottom: 'auto',
       },
+
+      '.dt-money-background': {
+        position: 'absolute',
+        zIndex: -1,
+        bottom: '0',
+        right: '-2rem',
+      }
 
     },
     
@@ -356,7 +364,8 @@ export const Footer = styled('footer', {
   '.quote': {
     p: {
       fontSize: '2.5rem',
-      maxWidth: 600,
+      fontWeight: '700',
+      maxWidth: 590,
       marginLeft: '4rem',
       marginTop: '-4rem',
       marginBottom: '5rem',
@@ -364,6 +373,7 @@ export const Footer = styled('footer', {
   
       span: {
        color: '$purple350',
+
       }
     },
   
