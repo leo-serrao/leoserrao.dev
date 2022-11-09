@@ -16,7 +16,8 @@ export const Header = styled('header', {
       marginRight: '2rem',
 
       '&:hover': {
-        color: '$purple300'
+        color: '$purple300',
+        transition: 'all 0.2s linear',
       }
     }
   },
@@ -24,12 +25,15 @@ export const Header = styled('header', {
   button: {
     padding: '0.2rem 1.5rem',
     color: '$white',
+    backgroundColor: '$purple500',
 
     borderRadius: 20,
-    backgroundColor: '$purple500',
+    border: 'none',
 
     '&:hover': {
       backgroundColor: '$purple300',
+      transition: 'all 0.2s linear',
     }
   }
 });
+

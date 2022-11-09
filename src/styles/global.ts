@@ -6,6 +6,10 @@ export const globalStyles = globalCss({
     padding: 0,
   },
 
+  html: {
+    scrollBehavior: 'smooth',
+  },
+
   a: {
     textDecoration: 'none',
   },

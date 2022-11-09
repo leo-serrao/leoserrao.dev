@@ -1,3 +1,4 @@
+import { relative } from "node:path/win32";
 import { keyframes, styled } from "..";
 
 export const HomeContainer = styled('main', {
@@ -23,20 +24,6 @@ const caret = keyframes({
     boxShadow: '0.5rem 0 0 transparent',
   },
 });
-
-// '@use postcss-preset-env': {
-//   stage: 0, 
-//   autoprefixer: {
-//     grid: 'true',
-//   },
-
-//   browsers: [
-//     "last 1 Chrome versions",
-//     "last 1 Firefox versions",
-//     "last 1 Safari versions",
-//     "last 1 Edge versions",
-//   ],
-// },
 
 
 export const Info = styled('div', {
@@ -82,6 +69,7 @@ export const Info = styled('div', {
 
     '&:hover': {
       backgroundColor: '$purple300',
+      transition: 'all 0.2s linear',
     }
   },
 
@@ -99,6 +87,18 @@ export const Illustration = styled('div', {
   }
 });
 
+const levitate = keyframes({
+  '0%': {
+    transform: 'translateY(-0.5rem)',
+  },
+  '50%': {
+    transform: 'translateY(0.5rem)',
+  },
+  '100%': {
+    transform: 'translateY(-0.5rem)',
+  },
+});
+
 export const Specializing = styled('div', {
   width: '100%',
   display: 'flex',
@@ -106,6 +106,8 @@ export const Specializing = styled('div', {
   alignItems: 'center',
   justifyContent: 'center',
   padding: '3rem 0',
+  position: 'relative',
+  marginBottom: '10rem',
 
   span: {
     color: '$purple300',
@@ -117,16 +119,25 @@ export const Specializing = styled('div', {
   },
 
   '.skills-dots': {
-    marginRight: '-80rem',
-    marginTop: '-15rem',
+    position: 'absolute',
+    bottom: '-4rem',
+    right: '-13rem',
     zIndex: '-1',
+  },
+
+  '.skills-planet': {
+    position: 'absolute',
+    top: '1rem',
+    left: '-10rem',
+    zIndex: '2',
+    animation: `${levitate} 4s infinite`,
   }
 });
 
 export const SkillsContainer = styled('div', {
   width: '100%',
   display: 'flex',
-  padding: '3rem 2rem',
+  padding: '3rem 0rem',
   flexDirection: 'column',
   justifyContent: 'center',
   backgroundColor: '$gray800',
@@ -198,3 +209,197 @@ export const SkillsContainer = styled('div', {
     },
   },
 });
+
+export const Showcase = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  position: 'relative',
+  marginBottom: '10rem',
+
+  width: '100%',
+  color: '$white',
+
+  span: {
+    color: '$purple300',
+  },
+
+  '.skills-circle': {
+    position: 'absolute',
+    left: '-10rem',
+    top: '-5rem',
+    zIndex: '-1',
+  },
+
+  '.skills-circle2': {
+    position: 'absolute',
+    right: '-10rem',
+    bottom: '-7rem',
+    zIndex: '-1',
+  }
+});
+
+export const ShowcaseContainer = styled('div', {
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems: 'center',
+  justifyContent: 'center',
+  marginTop: '5rem',
+
+  '.cards-container': {
+    display: 'flex',
+    justifyContent: 'space-between',
+    gap: '2rem',
+    marginBottom: '2rem',
+
+    '.card': {
+      width: 470,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'center',
+      flexDirection: 'column',
+      backgroundColor: 'rgba(55, 102, 244, 0.7)',
+      backdropFilter: 'blur(10px)',
+      boxShadow: '0 0 5px 3px rgba(0, 0, 0, 0.2)',
+      height: 622,
+      borderRadius: 30,
+      padding: '2rem 3rem',
+      position: 'relative',
+
+      header: {
+        width: '100%',
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'space-between',
+        marginBottom: 'auto',
+
+        '.arrow-icon': {
+          width: '4rem',
+          height: '5rem',
+        },
+
+        a: {
+          color: '$white',
+
+          '&:hover': {
+            color: '$purple300',
+            transition: 'all 0.2s linear',
+          }
+        }
+      },
+
+      img: {
+        marginBottom: 'auto',
+      },
+
+    },
+    
+    '.two': {
+      backgroundColor: '$purple350',
+
+      '.background-circle': {
+        position: 'absolute',
+        zIndex: -1,
+        bottom: '5.5rem',
+      },
+    },
+  },
+
+  '.view-more': {
+    width: '92%',
+    height: 196,
+    backgroundColor: '$purple375',
+    borderRadius: 30,
+    
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: '0 3rem',
+    overflow: 'hidden',
+
+    '.title': {
+      display: 'flex',
+      alignItems: 'center',
+      gap: '2rem',
+
+      a: {
+        display: 'flex',
+        alignItems: 'center',
+        color: '$white',
+
+        '&:hover': {
+          color: '$purple300',
+          transition: 'all 0.2s linear',
+        },
+      },
+
+      '.arrow-icon': {
+        width: '2rem',
+        height: '3rem',
+      }
+    },
+  },
+});
+
+export const Footer = styled('footer', {
+  width: '100%',
+  display: 'flex',
+  alignItems: 'center',
+  justifyContent: 'space-between',
+  position: 'relative',
+
+  '.quotation': {
+    color: '$purple500'
+  },
+
+  '.quote': {
+    p: {
+      fontSize: '2.5rem',
+      maxWidth: 600,
+      marginLeft: '4rem',
+      marginTop: '-4rem',
+      marginBottom: '5rem',
+      color: '$white',
+  
+      span: {
+       color: '$purple350',
+      }
+    },
+  
+    '.copyright': {
+      marginLeft: '4rem',
+    },
+  },
+
+  a: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+
+    border: 'none',
+    borderRadius: 100,
+    backgroundColor: '$white',
+    width: '6.25rem',
+    height: '6.25rem',
+    marginTop: '-18rem',
+
+    '.arrow-up-icon': {
+      width: '4rem',
+      height: '4rem',
+    },
+
+    '&:hover': {
+      backgroundColor: '$purple100',
+      transition: 'all 0.2s linear'
+    },
+  },
+
+  '.backgroundVector': {
+    position: 'absolute',
+    zIndex: -1,
+    left: '-30rem',
+    top: '-45rem',
+  }
+});
+
