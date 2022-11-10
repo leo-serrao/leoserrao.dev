@@ -46,6 +46,7 @@ export const Info = styled('div', {
 
   h2: {
     fontSize: '$2xl',
+    color: '$white',
 
     span: {
       color: '$purple300',

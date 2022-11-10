@@ -12,6 +12,7 @@ export const globalStyles = globalCss({
 
   a: {
     textDecoration: 'none',
+    cursor: 'pointer'
   },
 
   button: {
