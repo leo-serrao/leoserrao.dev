@@ -275,6 +275,10 @@ export const ShowcaseContainer = styled('div', {
         justifyContent: 'space-between',
         marginBottom: 'auto',
 
+        h1: {
+          fontWeight: 600,
+        },
+
         '.arrow-icon': {
           width: '4rem',
           height: '5rem',
@@ -335,6 +339,8 @@ export const ShowcaseContainer = styled('div', {
         display: 'flex',
         alignItems: 'center',
         color: '$white',
+        fontSize: '$2xl',
+        fontWeight: '600',
 
         '&:hover': {
           color: '$purple300',

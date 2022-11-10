@@ -34,7 +34,7 @@ import circle from '../assets/showcase/circle.svg'
 
 import dtMoneyBackground2 from '../assets/projects/dt-money-background2.svg'
 import dtMoneyDevice from '../assets/projects/dt-money-device.svg'
-import igniteShop from '../assets/projects/ignite-shop.svg'
+import igniteShop from '../assets/projects/ignite-shop-device.svg'
 
 import quotationPurple from '../assets/footer/quotation-purple.svg'
 
@@ -47,7 +47,7 @@ export default function Home() {
         <title>Home | Leonardo Serrão</title>
       </Head>
 
-      <HomeContainer id="top">
+      <HomeContainer>
         <Introduction>
           <Info>
             <span className="intro">Introduction</span>
@@ -58,9 +58,9 @@ export default function Home() {
             </h2>
 
             <p>
-              I enjoy creating user-centric, delightful, and human experiences
-              with touch of visual and digital. I am Looking forward to
-              collaborate with you!
+              I enjoy bringing code to life through beautiful screens and
+              challenging projects. I am Looking forward to collaborate with
+              you!
             </p>
 
             <a href="#contact">Hire Me</a>
@@ -214,8 +214,8 @@ export default function Home() {
             </div>
             <div className="view-more">
               <div className="title">
-                <h1>View more projects</h1>
                 <a href="/projects">
+                  View more projects
                   <IoIosArrowForward className="arrow-icon" />
                 </a>
               </div>

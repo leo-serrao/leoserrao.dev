@@ -8,10 +8,11 @@ globalStyles()
 export default function App({ Component, pageProps }: AppProps) {
   return (
     <Container>
-      <Header>
+      <Header id="top">
         <nav>
           <Link href="/">Home</Link>
-          <Link href="">Projects</Link>
+          <Link href="/projects">Projects</Link>
+          <Link href="/about">About</Link>
         </nav>
 
         <a href="#contact" className="contact">
