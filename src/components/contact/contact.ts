@@ -113,6 +113,7 @@ const levitate2 = keyframes({
 
 export const ContactContainer = styled('div', {
   width: '60%',
+  minWidth: 250,
   display: 'flex',
   backgroundColor: '$white',
   padding: '5rem 4rem',
@@ -120,10 +121,18 @@ export const ContactContainer = styled('div', {
   boxShadow: '0 0 5px 3px rgba(0, 0, 0, 0.2)',
   color: "#000",
 
+  '@media (max-width: 1024px)': {
+    flexDirection: 'column  ',
+  },
+
   '.info': {
     width: '60%',
     span: {
       color: '$purple500',
+
+      '@media (max-width: 810px)': {
+        fontSize: '$ssm',
+      },
     },
 
     h1: {
@@ -133,12 +142,20 @@ export const ContactContainer = styled('div', {
       marginTop: '1rem',
       color: '$gray900',
       maxWidth: 300,
+
+      '@media (max-width: 810px)': {
+        fontSize: '$sm',
+      },
     },
 
     '.feel-free-message': {
       marginTop: '2rem',
       maxWidth: 200,
       color: '$gray500',
+
+      '@media (max-width: 810px)': {
+        fontSize: '$ssm',
+      },
     },
 
     '.contact-info': {
@@ -161,7 +178,12 @@ export const ContactContainer = styled('div', {
         marginRight: '1rem',
         width: '1.5rem',
         height: '1.5rem',
-      }
+      },
+
+      '@media (max-width: 810px)': {
+        fontSize: '$ssm',
+        width: '15rem',
+      },
     },
 
     '.first': {
@@ -175,11 +197,34 @@ export const ContactContainer = styled('div', {
     flexDirection: 'column',
     position: 'relative',
 
+    '@media (max-width: 1024px)': {
+      width: '100%',
+    },
+
     '.big-planet': {
       position: 'absolute',
       top: '-10rem',
       right: '-12rem',
       animation: `${levitate} 4s infinite`,
+
+      '@media (max-width: 1250px)': {
+        width: 350,
+        height: 350,
+        top: '-5rem',
+        right: '-6rem',
+      },
+
+      '@media (max-width: 1024px)': {
+        top: '-30rem',
+        right: '-9rem',
+      },
+
+      '@media (max-width: 768px)': {
+        width: 250,
+        height: 250,
+        top: '-27rem',
+        right: '-7rem',
+      },
     },
 
     '.small-planet-1': {
@@ -187,6 +232,25 @@ export const ContactContainer = styled('div', {
       top: '-11rem',
       right: '9rem',  
       animation: `${levitate2} 4s infinite`,
+
+      '@media (max-width: 1250px)': {
+        width: 150,
+        height: 150,
+        top: '-7rem',
+        right: '8rem',
+      },
+
+      '@media (max-width: 1024px)': {
+        top: '-33rem',
+        right: '5rem',
+      },
+
+      '@media (max-width: 768px)': {
+        width: 100,
+        height: 100,
+        top: '-29rem',
+        right: '2rem',
+      },
     },
 
     '.small-planet-2': {
@@ -194,6 +258,22 @@ export const ContactContainer = styled('div', {
       top: '1rem',
       right: '-12rem',  
       animation: `${levitate2} 4s infinite`,
+
+      '@media (max-width: 1250px)': {
+        right: '-8rem',
+      },
+
+      '@media (max-width: 1024px)': {
+        top: '-28rem',
+        right: '-9rem',
+      },
+
+      '@media (max-width: 768px)': {
+        width: 50,
+        height: 50,
+        top: '-22rem',
+        right: '-7rem',
+      },
     },
 
     form: {
@@ -201,6 +281,10 @@ export const ContactContainer = styled('div', {
       flexDirection: 'column',
       marginTop: '24rem',
       alignItems: 'left',
+
+      '@media (max-width: 1024px)': {
+        marginTop: '2rem',
+      },
 
       p: {
         color: 'red',

@@ -6,11 +6,26 @@ export const HomeContainer = styled('main', {
   flexDirection: 'column',
   padding: '7rem 10rem',
   overflowX: 'hidden',
+
+  
+  '@bp1': {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
 
 export const Introduction = styled('div', {
   display: 'flex',
   width: '100%',
+  minWidth: 350,
+  position: 'relative',
+
+  '@bp1': {
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
+  
 });
 
 const type = keyframes ({
@@ -28,7 +43,16 @@ const caret = keyframes({
 
 export const Info = styled('div', {
   width: '50%',
+  minWidth: 250,
 
+
+  '@bp1': {
+    width: '100%',
+  },
+
+  '@bp01': {
+    paddingLeft: '2rem',
+  },
 
   '.intro': {
     color: '$purple300',
@@ -42,6 +66,11 @@ export const Info = styled('div', {
     color: '$white',
     whiteSpace: 'nowrap',
     animation: `${caret} .5s step-end infinite alternate, ${type} 5s steps(22, end)`,
+
+    '@bp1': {
+      fontSize: '$xl',
+      width: '15rem',
+    },
   },
 
   h2: {
@@ -50,13 +79,21 @@ export const Info = styled('div', {
 
     span: {
       color: '$purple300',
-    }
+    },
+
+    '@bp1': {
+      fontSize: '$xl',
+    },
   }, 
 
   p: {
     maxWidth: 500,
     marginTop: '1rem',
     marginBottom: '5rem',
+
+    '@bp1': {
+      fontSize: '$sm',
+    },
   },
 
   a: {
@@ -85,6 +122,26 @@ export const Illustration = styled('div', {
   img: {
     marginRight: '-13rem',
     marginTop: '-5rem',
+
+    '@bp3': {
+      width: '25rem',
+      marginTop: '-8rem',
+    },
+
+    '@bp2': {
+      width: '20rem',
+      marginTop: '-8rem',
+      marginLeft: '3rem',
+    },
+
+    '@bp1': {
+      position: 'absolute',
+      width: '15rem',
+      top: '-10.5rem',
+      left: '5rem',
+      zIndex: -1,
+      opacity: 0.7,
+    },
   }
 });
 
@@ -124,6 +181,11 @@ export const Specializing = styled('div', {
     bottom: '-4rem',
     right: '-13rem',
     zIndex: '-1',
+
+    '@bp3': {
+      width: '15rem',
+      height: '15rem',
+    },
   },
 
   '.skills-planet': {
@@ -132,11 +194,30 @@ export const Specializing = styled('div', {
     left: '-10rem',
     zIndex: '2',
     animation: `${levitate} 4s infinite`,
+
+    '@bp3': {
+      width: '10rem',
+      height: '10rem',
+      top: '4rem',
+      left: '-5rem',
+    },
+
+    '@bp02': {
+      width: '8rem',
+      height: '8rem',
+      top: '5rem',
+      left: '-12rem',
+    },
+
+    '@media (max-width: 530px)': {
+      left: '-10rem',
+    },
   }
 });
 
 export const SkillsContainer = styled('div', {
   width: '100%',
+  minWidth: 300,
   display: 'flex',
   padding: '3rem 0rem',
   flexDirection: 'column',
@@ -144,6 +225,10 @@ export const SkillsContainer = styled('div', {
   backgroundColor: '$gray800',
   borderRadius: 8,
   boxShadow: '0 0 5px 3px rgba(0, 0, 0, 0.2)',
+
+  '@bp3': {
+    paddingRight: '1rem',
+  },
 
   '.skill': {
     height: '5rem',
@@ -167,6 +252,10 @@ export const SkillsContainer = styled('div', {
         height: '1rem',
         borderRadius: 8,
         backgroundColor: '$white',
+
+        '@bp3': {
+          height: '0.5rem',
+        },
       },
 
       '.bar2': {
@@ -176,7 +265,20 @@ export const SkillsContainer = styled('div', {
         backgroundColor: '$purple500',
         marginTop: '-1rem',
         marginLeft: '-2px',
+
+        '@bp3': {
+          height: '0.5rem',
+          marginTop: '-0.5rem',
+        },
+
       }
+    },
+
+    img: {
+      '@bp3': {
+        width: '3.5rem',
+        height: '3.5rem',
+      },
     },
   },
 
@@ -206,7 +308,11 @@ export const SkillsContainer = styled('div', {
 
       '.bar2': {
         width: '95.5%',
-      }
+     
+        '@bp1': {
+          width: '100%'
+        },
+      },
     },
   },
 });
@@ -219,11 +325,27 @@ export const Showcase = styled('div', {
   position: 'relative',
   marginBottom: '10rem',
 
+
   width: '100%',
   color: '$white',
 
+  '.showcase-title': {
+    textAlign: 'center',
+  },
+
   span: {
     color: '$purple300',
+  },
+
+  h1: {
+    minWidth: 250,
+    '@bp1': {
+      fontSize: '$md',
+    },
+
+    '@bp02': {
+      
+    },
   },
 
   '.skills-circle': {
@@ -231,6 +353,22 @@ export const Showcase = styled('div', {
     left: '-10rem',
     top: '-5rem',
     zIndex: '-1',
+
+    '@bp2': {
+      width: '18rem',
+      height: '18rem',
+      top: 0
+    },
+
+    '@bp1': {
+      top: '4rem',
+    },
+
+    '@bp02': {
+      width: '11rem',
+      height: '11rem',
+      top: '4rem',
+    },
   },
 
   '.skills-circle2': {
@@ -238,6 +376,18 @@ export const Showcase = styled('div', {
     right: '-10rem',
     bottom: '-7rem',
     zIndex: '-1',
+
+    '@bp2': {
+      width: '13rem',
+      height: '13rem',
+      bottom: '-7rem',
+    },
+
+    '@bp1': {
+      width: '9rem',
+      height: '9rem',
+      bottom: '-5rem',
+    },
   }
 });
 
@@ -253,6 +403,11 @@ export const ShowcaseContainer = styled('div', {
     justifyContent: 'space-between',
     gap: '2rem',
     marginBottom: '2rem',
+    alignItems: 'center',
+
+    '@bp4': {
+      flexDirection: 'column  ',
+    },
 
     '.card': {
       width: 470,
@@ -268,6 +423,17 @@ export const ShowcaseContainer = styled('div', {
       padding: '2rem 3rem',
       position: 'relative',
       overflow: 'hidden',
+
+      
+      '@bp1': {
+        width: 280,
+        height: '25rem',
+      },
+
+      '@bp01': {
+        width: 200,
+        height: '25rem',
+      },
 
       header: {
         width: '100%',
@@ -297,6 +463,13 @@ export const ShowcaseContainer = styled('div', {
 
       img: {
         marginBottom: 'auto',
+        '@bp1': {
+          width: 380,
+        },
+
+        '@bp01': {
+          width: 300,
+        },
       },
 
       '.dt-money-background': {
@@ -304,6 +477,12 @@ export const ShowcaseContainer = styled('div', {
         zIndex: -1,
         bottom: '0',
         right: '-2rem',
+
+        
+        '@bp1': {
+          bottom: '-10rem',
+          right: '0rem',
+        },
       }
 
     },
@@ -315,8 +494,18 @@ export const ShowcaseContainer = styled('div', {
         position: 'absolute',
         zIndex: -1,
         bottom: '5.5rem',
+
+        '@bp1': {
+          width: '21rem',
+          bottom: '-2rem',
+        },
+
+        '@bp01': {
+          width: '17rem',
+        },
       },
-    },
+    }, 
+
   },
 
   '.view-more': {
@@ -331,10 +520,42 @@ export const ShowcaseContainer = styled('div', {
     padding: '0 3rem',
     overflow: 'hidden',
 
+    '@bp4': {
+      width: 470,
+    },
+
+    '@bp1': {
+      width: 280,
+      flexDirection: 'column',
+    },
+
+    '@bp01': {
+      width: 200,
+    },
+
+    img: {
+      '@bp1': {
+        width: '20rem',
+        height: '10rem',
+        marginTop: '1rem',
+      },
+
+      '@bp01': {
+        width: '18rem',
+        height: '10rem',
+        marginTop: '1rem',
+      },
+    },
+
     '.title': {
       display: 'flex',
       alignItems: 'center',
       gap: '2rem',
+
+      '@bp1': {
+        marginBottom: 'auto',
+        paddingTop: '1rem',
+      },
 
       a: {
         display: 'flex',
@@ -347,12 +568,19 @@ export const ShowcaseContainer = styled('div', {
           color: '$purple300',
           transition: 'all 0.2s linear',
         },
+
+        '@bp4': {
+          fontSize: '$md',
+          minWidth: 250,
+        },
       },
 
       '.arrow-icon': {
         width: '2rem',
         height: '3rem',
-      }
+      },
+
+      
     },
   },
 });
@@ -364,8 +592,17 @@ export const Footer = styled('footer', {
   justifyContent: 'space-between',
   position: 'relative',
 
+  '@media (max-width: 810px)': {
+    justifyContent: 'center',
+  },
+
   '.quotation': {
-    color: '$purple500'
+    color: '$purple500',
+
+    '@media (max-width: 810px)': {
+      width: '4rem',
+      height: '4rem',
+    },
   },
 
   '.quote': {
@@ -380,12 +617,24 @@ export const Footer = styled('footer', {
   
       span: {
        color: '$purple350',
+      },
 
-      }
+      '@media (max-width: 810px)': {
+        fontSize: '$md',
+        marginTop: '-2rem',
+        marginLeft: '2rem',
+        width: 250,
+      },
     },
   
     '.copyright': {
       marginLeft: '4rem',
+      whiteSpace: 'nowrap',
+
+      '@media (max-width: 810px)': {
+        fontSize: '0.6rem',
+        marginLeft: '2rem'
+      },
     },
   },
 
@@ -404,11 +653,23 @@ export const Footer = styled('footer', {
     '.arrow-up-icon': {
       width: '4rem',
       height: '4rem',
+
+      '@media (max-width: 810px)': {
+        width: '3rem',
+        height: '3rem',
+      },
     },
 
     '&:hover': {
       backgroundColor: '$purple100',
       transition: 'all 0.2s linear'
+    },
+
+    '@media (max-width: 810px)': {
+      width: '4rem',
+      height: '4rem',
+      minWidth: '4rem',
+      marginTop: '-10rem',
     },
   },
 

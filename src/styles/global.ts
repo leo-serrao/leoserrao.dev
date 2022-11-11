@@ -26,7 +26,7 @@ export const globalStyles = globalCss({
 
     /* width */
   '&::-webkit-scrollbar': {
-    width: 20,
+    width: 8,
   },
 
 /* Track */
@@ -38,7 +38,6 @@ export const globalStyles = globalCss({
   '&::-webkit-scrollbar-thumb': {
     backgroundColor: '$purple500',
     borderRadius: 25,
-    border: '8px solid $gray900'
   },
 
 /* Handle on hover */

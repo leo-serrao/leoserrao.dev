@@ -28,10 +28,59 @@ const orbit = keyframes({
   },
 });
 
+const smallOrbit = keyframes({
+  '0%': {
+    transform: 'translatex(0rem) ',
+    zIndex: 2,
+  },
+  '49%': {
+    zIndex: 2,
+  },
+  '50%': {
+    transform: 'translatex(-25rem)',
+    zIndex: 0,
+  },
+  '99%': {
+    zIndex: 0,
+  },
+  '100%': {
+    transform: 'translatex(0rem)',  
+    zIndex: 2, 
+  },
+});
+
+const superSmallOrbit = keyframes({
+  '0%': {
+    transform: 'translatex(-4rem) ',
+    zIndex: 2,
+  },
+  '49%': {
+    zIndex: 2,
+  },
+  '50%': {
+    transform: 'translatex(-22rem)',
+    zIndex: 0,
+  },
+  '99%': {
+    zIndex: 0,
+  },
+  '100%': {
+    transform: 'translatex(-4rem)',  
+    zIndex: 2, 
+  },
+});
+
 export const AboutMe = styled('div', {
   display: 'flex',
   width: '100%',
   marginBottom: '18rem',
+
+  '@bp2': {
+    flexDirection: 'column  ',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+
 
   '.photo-container': {
     width: '45%',
@@ -45,6 +94,26 @@ export const AboutMe = styled('div', {
       animation: `${orbit} 6s infinite`,
       boxShadow: '0 0 5px 3px rgba(0, 0, 0, 0.2)',
       borderRadius: 999,    
+
+      '@bp4': {
+        top: '5rem',
+        width: 70,
+        height: 70,
+        animation: `${smallOrbit} 6s infinite`,
+        right: '2rem',
+      },
+
+      '@bp3': {
+        right: '0'
+      },
+
+      '@bp2': {
+        right: '-15rem',
+      },
+
+      '@bp01': {
+        animation: `${superSmallOrbit} 6s infinite`,
+      },
     },
 
     '.photo': {
@@ -56,26 +125,78 @@ export const AboutMe = styled('div', {
       width: 350,
       height: 350,
       zIndex: 1,
+      position: 'absolute',
+      right: '11rem',
 
+      '@bp4': {
+        width: 250,
+        height: 250,
+        right: '8rem',
+      },
+
+      
+      '@bp3': {
+        right: '6rem',
+      },
+
+      '@bp2': {
+        right: '-8rem',
+      },
+
+      '@bp01': {
+        width: 200,
+        height: 200,
+        right: '-6rem',
+      },
+  
       '.me': {
+        position: 'absolute',
         zIndex: 1,
+
+        '@bp4': {
+          width: 250,
+          height: 250,
+        },
+
+        '@bp01': {
+          width: 200,
+          height: 200,
+        },
+
       },
       },
   },
 
   '.info': {
     width: '50%',
+    height: '23rem',
     color: '$white',
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'left',
+    
+    '@bp2': {
+      width: '100%',
+      marginTop: '20rem',
+      minWidth: 250,
 
+    },
+
+    h1: {
+      '@bp4': {
+        fontSize: '$xl',
+      },
+    },
 
     h2: {
       fontSize: '$2xl',
       color: '$purple300',
       marginTop: '-1rem',
       marginBottom: '1rem',
+
+      '@bp4': {
+        fontSize: '$xl',
+      },
     },
 
     span: {
@@ -86,16 +207,32 @@ export const AboutMe = styled('div', {
       img: {
         marginRight: '1rem',
       },
+
+      '@bp4': {
+        fontSize: '$sm',
+
+        img: {
+          width: '3rem',
+          heigh: '3rem',
+        },
+      },
     },
 
     p: {
       maxWidth: 500,
+      '@bp4': {
+        fontSize: '$ssm',
+      },
     },
 
     '.downloads': {
       marginTop: 'auto',
       display: 'flex',
       gap: '1rem',
+
+      '@bp4': {
+        flexDirection: 'column',
+      },
 
       a: {
         display: 'flex',
@@ -120,6 +257,10 @@ export const AboutMe = styled('div', {
           width: '1.5rem',
           height: '1.5rem',
         },
+
+        '@bp4': {
+          fontSize: '$ssm',
+        },
       },
     },
 
@@ -134,8 +275,17 @@ export const Footer = styled('footer', {
   justifyContent: 'space-between',
   position: 'relative',
 
+  '@media (max-width: 810px)': {
+    justifyContent: 'center',
+  },
+
   '.quotation': {
-    color: '$purple500'
+    color: '$purple500',
+
+    '@media (max-width: 810px)': {
+      width: '4rem',
+      height: '4rem',
+    },
   },
 
   '.quote': {
@@ -150,12 +300,24 @@ export const Footer = styled('footer', {
   
       span: {
        color: '$purple350',
+      },
 
-      }
+      '@media (max-width: 810px)': {
+        fontSize: '$md',
+        marginTop: '-2rem',
+        marginLeft: '2rem',
+        width: 250,
+      },
     },
   
     '.copyright': {
       marginLeft: '4rem',
+      whiteSpace: 'nowrap',
+
+      '@media (max-width: 810px)': {
+        fontSize: '0.6rem',
+        marginLeft: '2rem'
+      },
     },
   },
 
@@ -174,11 +336,23 @@ export const Footer = styled('footer', {
     '.arrow-up-icon': {
       width: '4rem',
       height: '4rem',
+
+      '@media (max-width: 810px)': {
+        width: '3rem',
+        height: '3rem',
+      },
     },
 
     '&:hover': {
       backgroundColor: '$purple100',
       transition: 'all 0.2s linear'
+    },
+
+    '@media (max-width: 810px)': {
+      width: '4rem',
+      height: '4rem',
+      minWidth: '4rem',
+      marginTop: '-10rem',
     },
   },
 

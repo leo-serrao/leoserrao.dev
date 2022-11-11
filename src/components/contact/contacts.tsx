@@ -94,7 +94,7 @@ export default function ContactForm() {
           </p>
 
           <div className="contact-info first">
-            <AiOutlineMail className="contact-icon" />
+            <AiOutlineMail className="contact-icon"/>
             <p>leoserraom@gmail.com</p>
           </div>
           <div className="contact-info">

@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
         </nav>
 
         <a href="#contact" className="contact">
-          Contact & Social
+          Contact
         </a>
       </Header>
 

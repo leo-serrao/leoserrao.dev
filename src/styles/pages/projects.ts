@@ -5,10 +5,20 @@ export const ProjectsContainer = styled('main', {
   flexDirection: 'column',
   padding: '7rem 10rem',
   overflowX: 'hidden',
+
+  '@bp3': {
+    alignItems: 'center',
+  },
 })
 
 export const Title = styled('div', {
   marginBottom: '5rem',
+  width: '100%',
+  textAlign: 'left',
+  
+  '@bp1': {
+    width: '15rem',
+  }, 
 
   span: {
     color: '$purple350',
@@ -20,17 +30,33 @@ export const Title = styled('div', {
     img: {
       marginRight: '1rem',
     },
+
+    '@bp1': {
+      fontSize: '$sm',
+
+      img: {
+        width: '3rem',
+        heigh: '3rem',
+      },
+    },
   },
 
   h1: {
     fontWeight: 600,
     maxWidth: 500,
+
+    '@bp1': {
+      fontSize: '$md',
+    },
   },
 
   h2: {
     fontWeight: 600,
     fontSize: '$2xl',
     maxWidth: 500,
+    '@bp1': {
+      fontSize: '$md',
+    },
   },
 })
 
@@ -40,52 +66,47 @@ export const CardsContainer = styled('div', {
   flexDirection: 'column',
   marginBottom: '15rem',
 
+  '@bp2': {
+    alignItems: 'center',
+  },
+
   
   '.card2': {
     backgroundColor: '$purple350',
 
-    '.info': {
-      boxShadow: '0px 0px 20px 90px #81A4FF',
+    span: {
+      color: '$gray50'
     },
+
   },
 
   '.card3': {
     backgroundColor: '#132742',
 
-    '.info': {
-      boxShadow: '0px 0px 20px 90px #132742',
-    },
+   
   },
 
   '.card4': {
     backgroundColor: '$purple500',
 
-    '.info': {
-      boxShadow: '0px 0px 20px 90px #5F49BF',
-    },
+   
   },
 
   '.card5': {
     backgroundColor: '$purple375',
 
-    '.info': {
-      boxShadow: `0px 0px 20px 90px #8072E0`,
-    },
   },
 
   '.card6': {
     backgroundColor: '$purple350',
 
     '.info': {
-      boxShadow: `0px 0px 20px 90px #81A4FF`,
-
       a: {
         marginBottom: 'auto',
         marginTop: '1rem',
         fontSize: '$2xl',
         fontWeight: '600',
       },
-
     },
 
     '.device-image': {
@@ -97,8 +118,35 @@ export const CardsContainer = styled('div', {
         
         img: {
           marginTop: '4rem',
+
+          '@bp3': {
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: '25rem',
+            height: '25rem',
+            marginTop: '-3rem'
+          },  
+           
+          '@bp02': {
+            width: '17rem',
+            height: '17rem',
+            marginTop: '6rem'
+          },
         },
+
+        '@bp3': {
+          alignItems: 'center',
+          justifyContent: 'center',
+        },
+
+       
       },
+
+    '@bp3': {
+      height: '25rem',
+    },
+
+    
   },
 })
 
@@ -113,6 +161,18 @@ export const Card = styled('div', {
   marginBottom: '2rem',
   overflow: 'hidden',
 
+   '@bp3': {
+     flexDirection: 'column  ',
+     height: '45rem',
+     minWidth: 350,
+     alignItems: 'center',
+   },
+
+   '@bp02': {
+    minWidth: 200,
+    height: '32rem',
+   },
+
 
 
   '.info': {
@@ -123,21 +183,50 @@ export const Card = styled('div', {
     width: '55%',
     color: '$white',
     padding: '1rem 0',
-    boxShadow: '0px 0px 20px 90px #3766F4',
+    position: 'relative',
     zIndex: '1',
+    minWidth: 320,
+    
+    '@bp3': {
+      width: '100%',
+    },
+
+    '@bp02': {
+      justifyContent: 'center',
+      alignItems: 'center',
+     },
 
     h1: {
       fontWeight: 600,
       color: '$white',
+
+      '@bp02': {
+        fontSize: '$md',
+       },
     },
 
     span: {
       color: '$gray300',
       marginBottom: '2rem',
+
+      '@bp02': {
+        fontSize: '$ssm',
+       },
     },
 
     p: {
       maxWidth: '25rem',
+
+      '@bp02': {
+        fontSize: '$ssm',
+        width: 250,
+        textAlign: 'center',
+        marginBottom: '1rem',
+       },
+
+       '@bp3': {
+        marginBottom: '1rem',
+       },
     },
 
     a: {
@@ -170,12 +259,37 @@ export const Card = styled('div', {
     paddingTop: '2rem',
     marginLeft: '-6rem',
     zIndex: '1',
+
+    '@bp5': {
+      marginLeft: '0',
+    },
+
+    '@bp02': {
+      paddingTop: '0',
+      marginTop: '-3rem',
+     },
+
+    '.device': {
+      '@bp4': {
+        width: '20rem',
+      },
+
+      '@bp02': {
+        width: '16rem',
+       },
+    },
   },
 
   '.background-img': {
     position: 'absolute',
     right: '-2.5rem',
     top: '-5rem',
+    width: '50rem',
+    height: '26rem',
+
+    '@bp5': {
+      display: 'none',
+    },
   }
 });
 
@@ -186,8 +300,17 @@ export const Footer = styled('footer', {
   justifyContent: 'space-between',
   position: 'relative',
 
+  '@media (max-width: 810px)': {
+    justifyContent: 'center',
+  },
+
   '.quotation': {
-    color: '$purple500'
+    color: '$purple500',
+
+    '@media (max-width: 810px)': {
+      width: '4rem',
+      height: '4rem',
+    },
   },
 
   '.quote': {
@@ -202,12 +325,24 @@ export const Footer = styled('footer', {
   
       span: {
        color: '$purple350',
+      },
 
-      }
+      '@media (max-width: 810px)': {
+        fontSize: '$md',
+        marginTop: '-2rem',
+        marginLeft: '2rem',
+        width: 250,
+      },
     },
   
     '.copyright': {
       marginLeft: '4rem',
+      whiteSpace: 'nowrap',
+
+      '@media (max-width: 810px)': {
+        fontSize: '0.6rem',
+        marginLeft: '2rem'
+      },
     },
   },
 
@@ -226,11 +361,23 @@ export const Footer = styled('footer', {
     '.arrow-up-icon': {
       width: '4rem',
       height: '4rem',
+
+      '@media (max-width: 810px)': {
+        width: '3rem',
+        height: '3rem',
+      },
     },
 
     '&:hover': {
       backgroundColor: '$purple100',
       transition: 'all 0.2s linear'
+    },
+
+    '@media (max-width: 810px)': {
+      width: '4rem',
+      height: '4rem',
+      minWidth: '4rem',
+      marginTop: '-10rem',
     },
   },
 

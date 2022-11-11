@@ -39,6 +39,7 @@ import igniteShop from '../assets/projects/ignite-shop-device.svg'
 import quotationPurple from '../assets/footer/quotation-purple.svg'
 
 import ContactForm from '../components/contact/contacts'
+import Link from 'next/link'
 
 export default function Home() {
   return (
@@ -150,8 +151,10 @@ export default function Home() {
         </Specializing>
 
         <Showcase>
-          <span>Showcase</span>
-          <h1>My Latest Projects</h1>
+          <div className="showcase-title">
+            <span>Showcase</span>
+            <h1>My Latest Projects</h1>
+          </div>
 
           <Image
             src={circle}
@@ -168,9 +171,9 @@ export default function Home() {
                     <h1>Financial Manager</h1>
                     <p>Personal Project | Web Design</p>
                   </div>
-                  <a href="/projects">
+                  <Link href="/projects">
                     <IoIosArrowForward className="arrow-icon" />
-                  </a>
+                  </Link>
                 </header>
                 <Image
                   src={dtMoneyDevice}
@@ -193,9 +196,9 @@ export default function Home() {
                     <h1>T-Shirt Shop</h1>
                     <p>Personal Project | Web Design</p>
                   </div>
-                  <a href="/projects">
+                  <Link href="/projects">
                     <IoIosArrowForward className="arrow-icon" />
-                  </a>
+                  </Link>
                 </header>
                 <Image
                   src={circle2}
@@ -214,13 +217,19 @@ export default function Home() {
             </div>
             <div className="view-more">
               <div className="title">
-                <a href="/projects">
+                <Link href="/projects">
                   View more projects
                   <IoIosArrowForward className="arrow-icon" />
-                </a>
+                </Link>
               </div>
 
-              <Image src={viewMore} alt="html5" width={484} height={526} />
+              <Image
+                src={viewMore}
+                alt="html5"
+                width={484}
+                height={526}
+                className="view-more-background"
+              />
             </div>
           </ShowcaseContainer>
           <Image

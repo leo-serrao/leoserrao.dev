@@ -69,7 +69,13 @@ export default function Projects() {
               </a>
             </div>
             <div className="device-image">
-              <Image src={device1} alt="" width={514} height={297} />
+              <Image
+                src={device1}
+                alt=""
+                width={514}
+                height={297}
+                className="device"
+              />
             </div>
             <Image
               src={background1}
@@ -100,15 +106,15 @@ export default function Projects() {
               </a>
             </div>
             <div className="device-image">
-              <Image src={device2} alt="" width={514} height={297} />
+              <Image
+                src={device2}
+                alt=""
+                width={514}
+                height={297}
+                className="device"
+              />
             </div>
-            <Image
-              src={background2}
-              alt=""
-              width={804}
-              height={520}
-              className="background-img"
-            />
+            <Image src={background2} alt="" className="background-img" />
           </Card>
 
           <Card className="card3">
@@ -132,7 +138,13 @@ export default function Projects() {
               </a>
             </div>
             <div className="device-image">
-              <Image src={device3} alt="" width={514} height={297} />
+              <Image
+                src={device3}
+                alt=""
+                width={514}
+                height={297}
+                className="device"
+              />
             </div>
             <Image
               src={background3}
@@ -163,7 +175,13 @@ export default function Projects() {
               </a>
             </div>
             <div className="device-image">
-              <Image src={device4} alt="" width={514} height={297} />
+              <Image
+                src={device4}
+                alt=""
+                width={514}
+                height={297}
+                className="device"
+              />
             </div>
             <Image
               src={background4}
@@ -194,7 +212,13 @@ export default function Projects() {
               </a>
             </div>
             <div className="device-image">
-              <Image src={device5} alt="" width={514} height={297} />
+              <Image
+                src={device5}
+                alt=""
+                width={514}
+                height={297}
+                className="device"
+              />
             </div>
             <Image
               src={background5}
