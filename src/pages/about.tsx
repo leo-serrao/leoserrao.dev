@@ -52,7 +52,7 @@ export default function About() {
             </p>
 
             <div className="downloads">
-              <a className="download" href="cv-leonardo-serrao-en.pdf" download>
+              <a className="download" href="cv-leonardo-serrao-pt.pdf" download>
                 <AiOutlineDownload className="download-icon" /> Download CV
                 (PT-BR)
               </a>
