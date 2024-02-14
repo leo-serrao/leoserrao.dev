@@ -27,7 +27,7 @@ import background3 from '../assets/projects/serrao-seguros-background.svg'
 import background4 from '../assets/projects/link-shortener-background.svg'
 import background5 from '../assets/projects/zip-search-background.svg'
 import background6 from '../assets/projects/view-more.svg'
-import ContactForm from '../components/Contact/contacts'
+import ContactForm from '../components/contact/contacts'
 import ProjectCard from '../components/ProjectCard/cards'
 import { IoIosArrowUp } from 'react-icons/io'
 
