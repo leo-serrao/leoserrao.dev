@@ -44,7 +44,7 @@ export default function About() {
             <h2>Front-End Dev</h2>
 
             <p>
-              Hello! <br /> I am gratuated in System Analysis and Development student at
+              Hello! <br /> I am gratuated in System Analysis and Development at
               Universidade Norte do Paraná (UNOPAR) and i’m currently working at
               TATA Consultancy Services (TCS) in Londrina - PR. The technology
               I enjoy the most working with is ReactJS. Looking forward for a
