@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unescaped-entities */
 import Head from 'next/head'
 import {
-  Card,
+  MoreCard,
   CardsContainer,
   Footer,
   ProjectsContainer,
@@ -16,21 +16,23 @@ import quotationPurple from '../assets/footer/quotation-purple.svg'
 import titleLine from '../assets/projects/title-line.svg'
 
 import device1 from '../assets/projects/dt-money-device.svg'
-import device2 from '../assets/projects/ignite-shop-device.svg'
-import device3 from '../assets/projects/pomodoro-device.svg'
+import device2 from '../assets/projects/pomodoro-device.svg'
+import device3 from '../assets/projects/serrao-seguros-device.svg'
 import device4 from '../assets/projects/link-shortener-device.svg'
 import device5 from '../assets/projects/zip-search-device.svg'
 
 import background1 from '../assets/projects/dt-money-background.svg'
-import background2 from '../assets/projects/ignite-shop-background.svg'
-import background3 from '../assets/projects/pomodoro-background.svg'
+import background2 from '../assets/projects/pomodoro-background.svg'
+import background3 from '../assets/projects/serrao-seguros-background.svg'
 import background4 from '../assets/projects/link-shortener-background.svg'
 import background5 from '../assets/projects/zip-search-background.svg'
 import background6 from '../assets/projects/view-more.svg'
-import ContactForm from '../components/contact/contacts'
+import ContactForm from '../components/Contact/contacts'
+import ProjectCard from '../components/ProjectCard/cards'
 import { IoIosArrowUp } from 'react-icons/io'
 
 export default function Projects() {
+  console.log(typeof(device1))
   return (
     <>
       <Head>
@@ -47,199 +49,62 @@ export default function Projects() {
         </Title>
 
         <CardsContainer>
-          <Card>
-            <div className="info">
-              <h1>Financial Manager</h1>
-              <span>Personal Project | Web Design</span>
+          <ProjectCard 
+            DeviceImg = {device1} 
+            BackgroundImg = {background1} 
+            LiveLink = "https://financial-manager-system.vercel.app" 
+            GithubLink = "https://github.com/leo-serrao/finances-management-reactjs"
+            Title = "Financial Manager"
+            Description = "In this project i developed an application to manage outcomes and incomes in personal financial life, you can insert and vizualize your total incomes, total outcomes, and total money after all the transactions. You can also make a search for specific transactions! 🤑💸"
+          />
 
-              <p>
-                In this project i developed an application to manage outcomes
-                and incomes in personal financial life, you can insert and
-                vizualize your total incomes, total outcomes, and total money
-                after all the transactions. You can also make a search for
-                specific transactions! 🤑💸
-              </p>
+          <ProjectCard 
+            DeviceImg = {device2} 
+            BackgroundImg = {background2} 
+            LiveLink = "https://pomodorotimerreact.vercel.app"
+            GithubLink = "https://github.com/leo-serrao/serrao-seguros"
+            Title = "Pomodoro Timer"
+            Description = "This one is a timer where you can especify the task you are working on and the time of your Pomodoro cycle, you can even see your history of cycles, how long ago that cycle was done ad if it was completed, interrupted or if it's on progress. ⏱⏱"
+          />  
 
-              <a
-                href="https://github.com/leo-serrao/finances-management-reactjs"
-                target="__blank"
-              >
-                <HiOutlineArrowNarrowRight className="arrow-icon" />
-                See more
-              </a>
-            </div>
-            <div className="device-image">
-              <Image
-                src={device1}
-                alt=""
-                width={514}
-                height={297}
-                className="device"
-              />
-            </div>
-            <Image
-              src={background1}
-              alt=""
-              width={804}
-              height={520}
-              className="background-img"
-            />
-          </Card>
+          <ProjectCard 
+            DeviceImg = {device3} 
+            BackgroundImg = {background3} 
+            LiveLink = "https://serrao-seguros.vercel.app"            
+            GithubLink = "https://github.com/leo-serrao/ignite-shop/tree/master"
+            Title = "Serrão Seguros"
+            Description = "Website developed as a landing page for Serrão Seguros, which is an insurance company, describing the company values, the products and contacts for them and their partners. This one's repo is private but feel free to check the live page"
+          />
 
-          <Card className="card2">
-            <div className="info">
-              <h1>T-Shirt Store</h1>
-              <span>Personal Project | Web Design</span>
+          <ProjectCard 
+            DeviceImg = {device4} 
+            BackgroundImg = {background4} 
+            LiveLink = "https://link-shortener-web.vercel.app"
+            GithubLink = "https://github.com/leo-serrao/link-shortener"
+            Title = "Link Shortener"
+            Description = "This application is a simple link shortener where you paste your long link and it returns to you a shortened link, and you can see a history of all the links you have shortened."
+          />
 
-              <p>
-                This projects is a T-Shirt store, where you can see all the
-                products through a carousel, see specifactions of each product
-                and finish the purchase!
-              </p>
+          <ProjectCard 
+            DeviceImg = {device5} 
+            BackgroundImg = {background5} 
+            LiveLink = "https://zipcode-searcher.vercel.app"
+            GithubLink = "https://github.com/leo-serrao/zipcode-searcher"
+            Title = "Zip Code Searcher"
+            Description = "Here you can type your zip code (brazilian) and the application will return all information available about it, such as city, neighbourhood, street and complements. 🔍"
+          />
 
-              <a
-                href="https://github.com/leo-serrao/ignite-shop/tree/master"
-                target="__blank"
-              >
-                <HiOutlineArrowNarrowRight className="arrow-icon" />
-                See more
-              </a>
-            </div>
-            <div className="device-image">
-              <Image
-                src={device2}
-                alt=""
-                width={514}
-                height={297}
-                className="device"
-              />
-            </div>
-            <Image src={background2} alt="" className="background-img" />
-          </Card>
-
-          <Card className="card3">
-            <div className="info">
-              <h1>Pomodoro Timer</h1>
-              <span>Personal Project | Web Design</span>
-
-              <p>
-                This one is timer where you can especify the task you are
-                working on and the time of your Pomodoro cycle, you can even see
-                your history of cycles, how long ago that cycle was ad if it was
-                completed, interrupted or if it's on progress. ⏱⏱
-              </p>
-
-              <a
-                href="https://github.com/leo-serrao/pomodoro-timer-reactjs"
-                target="__blank"
-              >
-                <HiOutlineArrowNarrowRight className="arrow-icon" />
-                See more
-              </a>
-            </div>
-            <div className="device-image">
-              <Image
-                src={device3}
-                alt=""
-                width={514}
-                height={297}
-                className="device"
-              />
-            </div>
-            <Image
-              src={background3}
-              alt=""
-              width={804}
-              height={520}
-              className="background-img"
-            />
-          </Card>
-
-          <Card className="card4">
-            <div className="info">
-              <h1>Link Shortener</h1>
-              <span>Personal Project | Web Design</span>
-
-              <p>
-                This application is a simple link shortener where you paste your
-                long link and it returns to you a shortened link, and you can
-                see a history of all the links you have shortened.
-              </p>
-
-              <a
-                href="https://github.com/leo-serrao/react-projects/tree/main/encurtador-de-link"
-                target="__blank"
-              >
-                <HiOutlineArrowNarrowRight className="arrow-icon" />
-                See more
-              </a>
-            </div>
-            <div className="device-image">
-              <Image
-                src={device4}
-                alt=""
-                width={514}
-                height={297}
-                className="device"
-              />
-            </div>
-            <Image
-              src={background4}
-              alt=""
-              width={804}
-              height={520}
-              className="background-img"
-            />
-          </Card>
-
-          <Card className="card5">
-            <div className="info">
-              <h1>Zip Code Searcher</h1>
-              <span>Personal Project | Web Design</span>
-
-              <p>
-                Here you can type your zip code and the application will return
-                all information available about it, such as city, neighbourhood,
-                street and complements. 🔍
-              </p>
-
-              <a
-                href="https://github.com/leo-serrao/react-projects/tree/main/buscador-de-cep"
-                target="__blank"
-              >
-                <HiOutlineArrowNarrowRight className="arrow-icon" />
-                See more
-              </a>
-            </div>
-            <div className="device-image">
-              <Image
-                src={device5}
-                alt=""
-                width={514}
-                height={297}
-                className="device"
-              />
-            </div>
-            <Image
-              src={background5}
-              alt=""
-              width={804}
-              height={520}
-              className="background-img"
-            />
-          </Card>
-
-          <Card className="card6">
+          <MoreCard>
             <div className="info">
               <a href="https://github.com/leo-serrao" target="__blank">
                 <HiOutlineArrowNarrowRight className="arrow-icon" />
                 Want More?
               </a>
             </div>
-            <div className="device-image">
+            <div className="bg-image">
               <Image src={background6} alt="" width={574} height={350} />
             </div>
-          </Card>
+          </MoreCard>
         </CardsContainer>
 
         <ContactForm />

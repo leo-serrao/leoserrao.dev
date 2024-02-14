@@ -7,7 +7,7 @@ import { AiOutlineDownload } from 'react-icons/ai'
 import me from '../assets/about/me.png'
 import moon from '../assets/about/moon.svg'
 import line from '../assets/projects/title-line.svg'
-import ContactForm from '../components/contact/contacts'
+import ContactForm from '../components/Contact/contacts'
 
 import quotationPurple from '../assets/footer/quotation-purple.svg'
 import { IoIosArrowUp } from 'react-icons/io'

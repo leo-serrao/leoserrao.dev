@@ -32,7 +32,7 @@ export const Title = styled('div', {
     },
 
     '@bp1': {
-      fontSize: '$sm',
+      fontSize: '$lg',
 
       img: {
         width: '3rem',
@@ -46,7 +46,7 @@ export const Title = styled('div', {
     maxWidth: 500,
 
     '@bp1': {
-      fontSize: '$md',
+      fontSize: '$xl',
     },
   },
 
@@ -69,93 +69,14 @@ export const CardsContainer = styled('div', {
   '@bp2': {
     alignItems: 'center',
   },
-
-  
-  '.card2': {
-    backgroundColor: '$purple350',
-
-    span: {
-      color: '$gray50'
-    },
-
-  },
-
-  '.card3': {
-    backgroundColor: '#132742',
-
-   
-  },
-
-  '.card4': {
-    backgroundColor: '$purple500',
-
-   
-  },
-
-  '.card5': {
-    backgroundColor: '$purple375',
-
-  },
-
-  '.card6': {
-    backgroundColor: '$purple350',
-
-    '.info': {
-      a: {
-        marginBottom: 'auto',
-        marginTop: '1rem',
-        fontSize: '$2xl',
-        fontWeight: '600',
-      },
-    },
-
-    '.device-image': {
-        alignItems: 'right',
-        justifyContent: 'right',
-        marginLeft: '0',
-        width: '60%',
-        paddingTop: '0',
-        
-        img: {
-          marginTop: '4rem',
-
-          '@bp3': {
-            alignItems: 'center',
-            justifyContent: 'center',
-            width: '25rem',
-            height: '25rem',
-            marginTop: '-3rem'
-          },  
-           
-          '@bp02': {
-            width: '17rem',
-            height: '17rem',
-            marginTop: '6rem'
-          },
-        },
-
-        '@bp3': {
-          alignItems: 'center',
-          justifyContent: 'center',
-        },
-
-       
-      },
-
-    '@bp3': {
-      height: '25rem',
-    },
-
-    
-  },
 })
 
-export const Card = styled('div', {
+export const MoreCard = styled('div', {
   display: 'flex',
   width: '94%',
   height: '20rem',
   position: 'relative',
-  backgroundColor: '$purple400',
+  backgroundColor: '$purple350',
   padding: '0 2rem',
   borderRadius: 20,
   marginBottom: '2rem',
@@ -163,7 +84,7 @@ export const Card = styled('div', {
 
    '@bp3': {
      flexDirection: 'column  ',
-     height: '45rem',
+     height: '25rem',
      minWidth: 350,
      alignItems: 'center',
    },
@@ -234,8 +155,10 @@ export const Card = styled('div', {
       alignItems: 'center',
       justifyContent: 'left',
       color: '$white',
-      fontWeight: '300',
-      marginTop: 'auto',
+      marginBottom: 'auto',
+      marginTop: '1rem',
+      fontSize: '$2xl',
+      fontWeight: '600',
 
       ".arrow-icon": {
         marginRight: '0.5rem',
@@ -248,20 +171,44 @@ export const Card = styled('div', {
         transition: 'all 0.2s linear',
       },
     },
+
+    img: {
+      marginTop: '4rem',
+
+      '@bp3': {
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: '25rem',
+        height: '25rem',
+        marginTop: '-3rem'
+      },  
+       
+      '@bp02': {
+        width: '17rem',
+        height: '17rem',
+        marginTop: '6rem'
+      },
+    },
     
   },
 
-  '.device-image': {
+  '.bg-image': {
     display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    width: '37%',
-    paddingTop: '2rem',
-    marginLeft: '-6rem',
     zIndex: '1',
+    alignItems: 'right',
+    justifyContent: 'right',
+    marginLeft: '0',
+    width: '60%',
+    paddingTop: '0',
+   
 
     '@bp5': {
       marginLeft: '0',
+    },
+
+    '@bp3': {
+      alignItems: 'center',
+      justifyContent: 'center',
     },
 
     '@bp02': {

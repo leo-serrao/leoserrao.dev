@@ -38,7 +38,7 @@ import igniteShop from '../assets/projects/ignite-shop-device.svg'
 
 import quotationPurple from '../assets/footer/quotation-purple.svg'
 
-import ContactForm from '../components/contact/contacts'
+import ContactForm from '../components/Contact/contacts'
 import Link from 'next/link'
 
 export default function Home() {
