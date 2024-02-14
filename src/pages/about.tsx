@@ -44,20 +44,20 @@ export default function About() {
             <h2>Front-End Dev</h2>
 
             <p>
-              Hello! <br /> I’m an System Analysis and Development student in
+              Hello! <br /> I am gratuated in System Analysis and Development student at
               Universidade Norte do Paraná (UNOPAR) and i’m currently working at
-              TATA Consultancy Services (TCS) at Londrina - PR. The technologie
-              i enjoy the most working with is ReactJS. Looking forward for
+              TATA Consultancy Services (TCS) in Londrina - PR. The technology
+              I enjoy the most working with is ReactJS. Looking forward for a
               great collaboration!
             </p>
 
             <div className="downloads">
-              <a className="download" href="cv-leonardo-serrao-pt.pdf" download>
-                <AiOutlineDownload className="download-icon" /> Download CV
+              <a className="download" href="https://drive.google.com/file/d/13Ps9asEOPuK7uucVGB1nMRIPJPow0fCY/view?usp=sharing" target="__blank">
+                <AiOutlineDownload className="download-icon" /> Check my CV
                 (PT-BR)
               </a>
-              <a className="download" href="cv-leonardo-serrao-en.pdf" download>
-                <AiOutlineDownload className="download-icon" /> Download CV
+              <a className="download" href="https://drive.google.com/file/d/1gZOYHRu4n-0FQ_aszLcXkLTeuLU9ZaVD/view?usp=sharing" target="__blank">
+                <AiOutlineDownload className="download-icon" /> Check my CV
                 (EN-US)
               </a>
             </div>
