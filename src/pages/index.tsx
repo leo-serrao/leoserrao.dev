@@ -34,7 +34,7 @@ import circle from '../assets/showcase/circle.svg'
 
 import dtMoneyBackground2 from '../assets/projects/dt-money-background2.svg'
 import dtMoneyDevice from '../assets/projects/dt-money-device.svg'
-import igniteShop from '../assets/projects/ignite-shop-device.svg'
+import SerraoSeguros from '../assets/projects/serrao-seguros-device.svg'
 
 import quotationPurple from '../assets/footer/quotation-purple.svg'
 
@@ -72,8 +72,10 @@ export default function Home() {
         </Introduction>
 
         <Specializing>
-          <span>Specializing</span>
-          <h1>Skills</h1>
+          <div className="title-container">
+            <h1>SKILLS </h1>
+            <span>Current areas of proficiency</span>
+          </div>
 
           <Image
             src={planet}
@@ -152,8 +154,8 @@ export default function Home() {
 
         <Showcase>
           <div className="showcase-title">
-            <span>Showcase</span>
-            <h1>My Latest Projects</h1>
+            <h1>PROJECTS</h1>
+            <span>Featured Work and Project Showcase</span>
           </div>
 
           <Image
@@ -193,7 +195,7 @@ export default function Home() {
               <div className="card two">
                 <header>
                   <div>
-                    <h1>T-Shirt Shop</h1>
+                    <h1>Serrão Seguros</h1>
                     <p>Personal Project | Web Design</p>
                   </div>
                   <Link href="/projects">
@@ -208,7 +210,7 @@ export default function Home() {
                   className="background-circle"
                 />
                 <Image
-                  src={igniteShop}
+                  src={SerraoSeguros}
                   alt="device1"
                   width={483}
                   height={292}

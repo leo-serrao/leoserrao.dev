@@ -19,6 +19,7 @@ export const Introduction = styled('div', {
   width: '100%',
   minWidth: 350,
   position: 'relative',
+  marginBottom: '10rem',
 
   '@bp1': {
     alignItems: 'center',
@@ -65,7 +66,7 @@ export const Info = styled('div', {
     overflow: 'hidden',
     color: '$white',
     whiteSpace: 'nowrap',
-    animation: `${caret} .5s step-end infinite alternate, ${type} 5s steps(22, end)`,
+    animation: `${caret} .3s step-end infinite alternate, ${type} 3s steps(22, end)`,
 
     '@bp1': {
       fontSize: '$xl',
@@ -167,13 +168,29 @@ export const Specializing = styled('div', {
   position: 'relative',
   marginBottom: '10rem',
 
-  span: {
-    color: '$purple300',
-    marginBottom: '0.5rem',
+  '.title-container': {
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '8.5rem',
+    marginBottom: '3rem',
   },
 
   h1: {
     marginBottom: '1rem',
+    fontSize: '10rem',
+    color: '$purple500',
+    opacity: '30%',
+  },
+
+  span: {
+    color: '$purple300',
+    marginBottom: '0.5rem',
+    fontSize: '1rem',
+    position: 'absolute',
+    bottom: '0.5rem',
+    right: '0.5rem',
   },
 
   '.skills-dots': {
@@ -330,7 +347,30 @@ export const Showcase = styled('div', {
   color: '$white',
 
   '.showcase-title': {
-    textAlign: 'center',
+    position: 'relative',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '8.5rem',
+    marginBottom: '3rem',
+
+    h1: {
+      marginBottom: '1rem',
+      fontSize: '10rem',
+      color: '$purple500',
+      opacity: '30%',
+    },
+  
+    span: {
+      color: '$purple300',
+      marginBottom: '0.5rem',
+      fontSize: '1rem',
+      position: 'absolute',
+      bottom: '0.5rem',
+      right: '0.5rem',
+    },
+  
+
   },
 
   span: {

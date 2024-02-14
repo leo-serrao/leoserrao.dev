@@ -12,52 +12,29 @@ export const ProjectsContainer = styled('main', {
 })
 
 export const Title = styled('div', {
-  marginBottom: '5rem',
-  width: '100%',
-  textAlign: 'left',
-  
-  '@bp1': {
-    width: '15rem',
-  }, 
-
-  span: {
-    color: '$purple350',
+    position: 'relative',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'left',
-    marginBottom: '1rem',
+    height: '8.5rem',
+    marginBottom: '3rem',
+    width: '52%',
 
-    img: {
-      marginRight: '1rem',
+    h1: {
+      marginBottom: '1rem',
+      fontSize: '10rem',
+      color: '$purple500',
+      opacity: '30%',
     },
-
-    '@bp1': {
-      fontSize: '$lg',
-
-      img: {
-        width: '3rem',
-        heigh: '3rem',
-      },
+  
+    span: {
+      color: '$purple300',
+      marginBottom: '0.5rem',
+      fontSize: '1rem',
+      position: 'absolute',
+      bottom: '0.5rem',
+      right: '0.5rem',
     },
-  },
-
-  h1: {
-    fontWeight: 600,
-    maxWidth: 500,
-
-    '@bp1': {
-      fontSize: '$xl',
-    },
-  },
-
-  h2: {
-    fontWeight: 600,
-    fontSize: '$2xl',
-    maxWidth: 500,
-    '@bp1': {
-      fontSize: '$md',
-    },
-  },
 })
 
 export const CardsContainer = styled('div', {

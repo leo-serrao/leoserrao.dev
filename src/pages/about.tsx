@@ -35,13 +35,18 @@ export default function About() {
           </div>
 
           <div className="info">
-            <span>
+            {/* <span>
               <Image src={line} alt="" />
               About Me
             </span>
 
             <h1>Leonardo Serrão</h1>
-            <h2>Front-End Dev</h2>
+            <h2>Front-End Dev</h2> */}
+
+            <div className="title-container">
+              <h1>LEONARDO </h1>
+              <span>About me: Front-end Dev</span>
+            </div>
 
             <p>
               Hello! <br /> I am gratuated in System Analysis and Development at

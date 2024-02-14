@@ -182,40 +182,65 @@ export const AboutMe = styled('div', {
 
     },
 
-    h1: {
-      '@bp4': {
-        fontSize: '$xl',
-      },
-    },
+    // h1: {
+    //   '@bp4': {
+    //     fontSize: '$xl',
+    //   },
+    // },
 
-    h2: {
-      fontSize: '$2xl',
-      color: '$purple300',
-      marginTop: '-1rem',
-      marginBottom: '1rem',
+    // h2: {
+    //   fontSize: '$2xl',
+    //   color: '$purple300',
+    //   marginTop: '-1rem',
+    //   marginBottom: '1rem',
 
-      '@bp4': {
-        fontSize: '$xl',
-      },
-    },
+    //   '@bp4': {
+    //     fontSize: '$xl',
+    //   },
+    // },
 
-    span: {
-      color: '$purple350',
+    // span: {
+    //   color: '$purple350',
+    //   display: 'flex',
+    //   alignItems: 'center',
+
+    //   img: {
+    //     marginRight: '1rem',
+    //   },
+
+    //   '@bp4': {
+    //     fontSize: '$sm',
+
+    //     img: {
+    //       width: '3rem',
+    //       heigh: '3rem',
+    //     },
+    //   },
+    // },
+
+    '.title-container': {
+      position: 'relative',
       display: 'flex',
       alignItems: 'center',
-
-      img: {
-        marginRight: '1rem',
-      },
-
-      '@bp4': {
-        fontSize: '$sm',
-
-        img: {
-          width: '3rem',
-          heigh: '3rem',
-        },
-      },
+      justifyContent: 'left',
+      height: '6.5rem',
+      maxWidth: 620,
+      padding: '0',
+      marginBottom: '2rem',
+    },
+  
+    h1: {
+      fontSize: '7rem',
+      color: '$purple500',
+      opacity: '30%',
+    },
+  
+    span: {
+      color: '$purple300',
+      fontSize: '1rem',
+      position: 'absolute',
+      bottom: '0.5rem',
+      right: '0.5rem',
     },
 
     p: {
@@ -223,6 +248,8 @@ export const AboutMe = styled('div', {
       '@bp4': {
         fontSize: '$ssm',
       },
+
+      marginLeft: '0.5rem',
     },
 
     '.downloads': {
@@ -242,6 +269,7 @@ export const AboutMe = styled('div', {
         fontSize: '$sm',
         padding: '0.5rem 0.5rem',
         color: '$white',
+        marginLeft: '0.5rem',
   
         border: 'none',
         borderRadius: 25,
