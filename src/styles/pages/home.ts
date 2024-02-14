@@ -190,7 +190,7 @@ export const Specializing = styled('div', {
     fontSize: '1rem',
     position: 'absolute',
     bottom: '0.5rem',
-    right: '0.5rem',
+    right: '1rem',
   },
 
   '.skills-dots': {
@@ -352,7 +352,6 @@ export const Showcase = styled('div', {
     alignItems: 'center',
     justifyContent: 'center',
     height: '8.5rem',
-    marginBottom: '3rem',
 
     h1: {
       marginBottom: '1rem',
@@ -367,10 +366,8 @@ export const Showcase = styled('div', {
       fontSize: '1rem',
       position: 'absolute',
       bottom: '0.5rem',
-      right: '0.5rem',
+      right: '1rem',
     },
-  
-
   },
 
   span: {

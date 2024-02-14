@@ -143,13 +143,6 @@ export default function Home() {
               <Image src={english} alt="english" width={80} height={80} />
             </div>
           </SkillsContainer>
-          <Image
-            src={dots}
-            alt="html5"
-            width={347}
-            height={353}
-            className="skills-dots"
-          />
         </Specializing>
 
         <Showcase>
@@ -158,13 +151,6 @@ export default function Home() {
             <span>Featured Work and Project Showcase</span>
           </div>
 
-          <Image
-            src={circle}
-            alt="html5"
-            width={574}
-            height={583}
-            className="skills-circle"
-          />
           <ShowcaseContainer>
             <div className="cards-container">
               <div className="card">
@@ -234,13 +220,6 @@ export default function Home() {
               />
             </div>
           </ShowcaseContainer>
-          <Image
-            src={circle3}
-            alt="html5"
-            width={345}
-            height={345}
-            className="skills-circle2"
-          />
         </Showcase>
 
         <ContactForm />

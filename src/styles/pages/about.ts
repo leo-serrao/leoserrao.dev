@@ -182,49 +182,13 @@ export const AboutMe = styled('div', {
 
     },
 
-    // h1: {
-    //   '@bp4': {
-    //     fontSize: '$xl',
-    //   },
-    // },
-
-    // h2: {
-    //   fontSize: '$2xl',
-    //   color: '$purple300',
-    //   marginTop: '-1rem',
-    //   marginBottom: '1rem',
-
-    //   '@bp4': {
-    //     fontSize: '$xl',
-    //   },
-    // },
-
-    // span: {
-    //   color: '$purple350',
-    //   display: 'flex',
-    //   alignItems: 'center',
-
-    //   img: {
-    //     marginRight: '1rem',
-    //   },
-
-    //   '@bp4': {
-    //     fontSize: '$sm',
-
-    //     img: {
-    //       width: '3rem',
-    //       heigh: '3rem',
-    //     },
-    //   },
-    // },
-
     '.title-container': {
       position: 'relative',
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'left',
       height: '6.5rem',
-      maxWidth: 620,
+      maxWidth: 600,
       padding: '0',
       marginBottom: '2rem',
     },

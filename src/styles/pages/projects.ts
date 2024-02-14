@@ -33,7 +33,7 @@ export const Title = styled('div', {
       fontSize: '1rem',
       position: 'absolute',
       bottom: '0.5rem',
-      right: '0.5rem',
+      right: '1rem',
     },
 })
 
