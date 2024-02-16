@@ -18,14 +18,14 @@ import { IoIosArrowUp } from 'react-icons/io'
 
 import introImg from '../assets/introductionIlustration/intro.svg'
 
-import javascriptIcon from '../assets/skills/javascript.svg'
-import typescriptIcon from '../assets/skills/typescript.svg'
-import english from '../assets/skills/english.png'
-import reactIcon from '../assets/skills/react.svg'
-import htmlIcon from '../assets/skills/html.svg'
+import { SiHtml5 } from "react-icons/si";
+import { SiCss3 } from "react-icons/si";
+import { SiJavascript } from "react-icons/si";
+import { SiTypescript } from "react-icons/si";
+import { SiReact } from "react-icons/si";
+import { LiaFlagUsaSolid } from "react-icons/lia";
 import planet from '../assets/skills/planet.png'
-import cssIcon from '../assets/skills/css.svg'
-import dots from '../assets/skills/dots.svg'
+import moon from '../assets/skills/moon.png'
 
 import viewMore from '../assets/showcase/viewMore.svg'
 import circle3 from '../assets/showcase/circle3.svg'
@@ -80,68 +80,43 @@ export default function Home() {
           <Image
             src={planet}
             alt="html5"
-            width={280}
-            height={280}
+            width={260}
+            height={260}
             className="skills-planet"
           />
           <SkillsContainer>
             <div className="skill">
-              <div className="skillBar">
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-              </div>
-              <Image src={htmlIcon} alt="html5" width={80} height={80} />
+              <SiHtml5 />
             </div>
 
             <div className="skill">
-              <div className="skillBar">
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-              </div>
-              <Image src={cssIcon} alt="css" width={80} height={80} />
+              <SiCss3 />
             </div>
 
             <div className="skill">
-              <div className="skillBar">
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-              </div>
-              <Image
-                src={javascriptIcon}
-                alt="javascript"
-                width={80}
-                height={80}
-              />
+              <SiJavascript />
             </div>
 
-            <div className="skill typescript">
-              <div className="skillBar">
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-              </div>
-              <Image
-                src={typescriptIcon}
-                alt="typescript"
-                width={80}
-                height={80}
-              />
+            <div className="skill">
+              <SiTypescript />
             </div>
 
-            <div className="skill react">
-              <div className="skillBar">
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-              </div>
-              <Image src={reactIcon} alt="react" width={80} height={80} />
+            <div className="skill">
+              <SiReact />
             </div>
 
-            <div className="skill english">
-              <div className="skillBar">
-                <div className="bar1"></div>
-                <div className="bar2"></div>
-              </div>
-              <Image src={english} alt="english" width={80} height={80} />
+            <div className="skill">
+              <LiaFlagUsaSolid />
             </div>
+
+            <Image
+            src={moon}
+            alt="html5"
+            width={180}
+            height={180}
+            className="skills-moon"
+          />
+
           </SkillsContainer>
         </Specializing>
 

@@ -53,5 +53,6 @@ export const {
     bp3: '(max-width: 1024px)',
     bp4: '(max-width: 1250px)',
     bp5: '(max-width: 1300px)',
+    bp6: '(max-width: 1440px)',
   },
 });

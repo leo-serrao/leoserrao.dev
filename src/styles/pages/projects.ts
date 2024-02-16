@@ -18,13 +18,27 @@ export const Title = styled('div', {
     justifyContent: 'left',
     height: '8.5rem',
     marginBottom: '3rem',
-    width: '52%',
+    maxWidth: '52%',
+
+    '@bp3': {
+      justifyContent: 'center',
+      maxWidth: '90%',
+    },
+    
 
     h1: {
       marginBottom: '1rem',
       fontSize: '10rem',
       color: '$purple500',
       opacity: '30%',
+
+      '@bp3': {
+        fontSize: '7rem',
+      },
+
+      '@bp2': {
+        fontSize: '5rem',
+      },
     },
   
     span: {
@@ -34,6 +48,15 @@ export const Title = styled('div', {
       position: 'absolute',
       bottom: '0.5rem',
       right: '1rem',
+
+      '@bp3': {
+        fontSize: '0.8rem',
+        bottom: '1.5rem',
+      },
+
+      '@bp2': {
+        bottom: '2.2rem',
+      },
     },
 })
 

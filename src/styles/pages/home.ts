@@ -26,6 +26,10 @@ export const Introduction = styled('div', {
     justifyContent: 'center',
   },
 
+  '@bp3': {
+    marginBottom: '3rem',
+  },
+
   
 });
 
@@ -166,7 +170,11 @@ export const Specializing = styled('div', {
   justifyContent: 'center',
   padding: '3rem 0',
   position: 'relative',
-  marginBottom: '10rem',
+  marginBottom: '8rem',
+
+  '@bp02': {
+    marginBottom: '3rem',
+  },
 
   '.title-container': {
     position: 'relative',
@@ -174,7 +182,6 @@ export const Specializing = styled('div', {
     alignItems: 'center',
     justifyContent: 'center',
     height: '8.5rem',
-    marginBottom: '3rem',
   },
 
   h1: {
@@ -182,6 +189,15 @@ export const Specializing = styled('div', {
     fontSize: '10rem',
     color: '$purple500',
     opacity: '30%',
+
+    '@bp3': {
+      fontSize: '7rem',
+    },
+
+    '@bp02': {
+      fontSize: '4.5rem',
+      marginBottom: '1rem',
+    },
   },
 
   span: {
@@ -191,40 +207,84 @@ export const Specializing = styled('div', {
     position: 'absolute',
     bottom: '0.5rem',
     right: '1rem',
-  },
-
-  '.skills-dots': {
-    position: 'absolute',
-    bottom: '-4rem',
-    right: '-13rem',
-    zIndex: '-1',
 
     '@bp3': {
-      width: '15rem',
-      height: '15rem',
+      fontSize: '0.8rem',
+      bottom: '1.5rem',
+    },
+
+    '@bp02': {
+      bottom: '2.5rem',
+      fontSize: '0.6rem',
     },
   },
 
+
   '.skills-planet': {
     position: 'absolute',
-    top: '1rem',
-    left: '-10rem',
+    top: '5rem',
+    left: '0rem',
     zIndex: '2',
     animation: `${levitate} 4s infinite`,
+
+    '@bp6': {
+      width: '12rem',
+      height: '12rem',
+      bottom: '5rem',
+      right: '-12rem',
+    },
 
     '@bp3': {
       width: '10rem',
       height: '10rem',
       top: '4rem',
-      left: '-5rem',
+      left: '-7rem',
+    },
+
+    '@bp2': {
+      width: '9rem',
+      height: '9rem',
+      top: '6rem',
     },
 
     '@bp02': {
       width: '8rem',
       height: '8rem',
-      top: '5rem',
+      top: '9rem',
       left: '-12rem',
+      zIndex: '-1',
     },
+
+
+    '@media (max-width: 530px)': {
+      left: '-10rem',
+    },
+  },
+
+  '.skills-moon': {
+    position: 'absolute',
+    bottom: '-10rem',
+    right: '1rem',
+    zIndex: '2',
+    animation: `${levitate} 4s infinite`,
+
+    '@bp3': {
+      width: '8rem',
+      height: '8rem',
+      bottom: '4rem',
+      right: '-5rem',
+    },
+
+    '@bp2': {
+      bottom: '-1rem',
+      width: '7rem',
+      height: '7rem',
+    },
+
+    '@bp02': {
+      display: 'none',
+    },
+
 
     '@media (max-width: 530px)': {
       left: '-10rem',
@@ -236,101 +296,37 @@ export const SkillsContainer = styled('div', {
   width: '100%',
   minWidth: 300,
   display: 'flex',
-  padding: '3rem 0rem',
-  flexDirection: 'column',
+  alignItems: 'center',
   justifyContent: 'center',
-  backgroundColor: '$gray800',
+  flexWrap: 'wrap',
+  gap: '2rem',
+  padding: '3rem 0rem',
   borderRadius: 8,
-  boxShadow: '0 0 5px 3px rgba(0, 0, 0, 0.2)',
+  marginTop: '6rem',
 
   '@bp3': {
     paddingRight: '1rem',
+    marginTop: '0',
   },
 
   '.skill': {
     height: '5rem',
+    maxWidth: '5rem',
+    width: '100%',
+    border: '1px solid $white',
+    fontSize: '5rem',
     display: 'flex',
     alignItems: 'center',
-    padding: '1rem 0 1rem 3rem',
-    marginBottom: '0.5rem',
+    justifyContent: 'center',
+    padding: '1.5rem',
+    borderRadius: '0.75rem',
+    boxShadow: '0 0 5px 3px rgba(0, 0, 0, 0.2)',
 
-
-    '.skillBar': {
-      width: '85%',
-      height: '5rem',
-      display: 'flex',
-      flexDirection: 'column',
-      justifyContent: 'center',
-      marginRight: '1rem',
-
-
-      '.bar1': {
-        width: '95%',
-        height: '1rem',
-        borderRadius: 8,
-        backgroundColor: '$white',
-
-        '@bp3': {
-          height: '0.5rem',
-        },
-      },
-
-      '.bar2': {
-        width: '90%',
-        height: '1rem',
-        borderRadius: 8,
-        backgroundColor: '$purple500',
-        marginTop: '-1rem',
-        marginLeft: '-2px',
-
-        '@bp3': {
-          height: '0.5rem',
-          marginTop: '-0.5rem',
-        },
-
-      }
+    '@bp3': {
+      fontSize: '3rem',
+      padding: '1rem',
     },
 
-    img: {
-      '@bp3': {
-        width: '3.5rem',
-        height: '3.5rem',
-      },
-    },
-  },
-
-  '.typescript': {
-
-    '.skillBar': {
-
-      '.bar2': {
-        width: '75%',
-      }
-    },
-  },
-
-  '.react': {
-
-    '.skillBar': {
-
-      '.bar2': {
-        width: '80%',
-      }
-    },
-  },
-
-  '.english': {
-
-    '.skillBar': {
-
-      '.bar2': {
-        width: '95.5%',
-     
-        '@bp1': {
-          width: '100%'
-        },
-      },
-    },
   },
 });
 
@@ -341,9 +337,6 @@ export const Showcase = styled('div', {
   justifyContent: 'center',
   position: 'relative',
   marginBottom: '10rem',
-
-
-  width: '100%',
   color: '$white',
 
   '.showcase-title': {
@@ -358,6 +351,15 @@ export const Showcase = styled('div', {
       fontSize: '10rem',
       color: '$purple500',
       opacity: '30%',
+ 
+      '@bp3': {
+        fontSize: '7rem',
+      },
+
+      '@bp02': {
+        fontSize: '4.5rem',
+        marginBottom: '1rem',
+      },
     },
   
     span: {
@@ -367,6 +369,16 @@ export const Showcase = styled('div', {
       position: 'absolute',
       bottom: '0.5rem',
       right: '1rem',
+
+      '@bp3': {
+        fontSize: '0.8rem',
+        bottom: '1.5rem',
+      },
+
+      '@bp02': {
+        bottom: '2.5rem',
+        fontSize: '0.6rem',
+      },
     },
   },
 
@@ -447,7 +459,7 @@ export const ShowcaseContainer = styled('div', {
     },
 
     '.card': {
-      width: 470,
+      width: 430,
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'center',

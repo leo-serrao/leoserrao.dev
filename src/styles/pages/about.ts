@@ -191,12 +191,20 @@ export const AboutMe = styled('div', {
       maxWidth: 600,
       padding: '0',
       marginBottom: '2rem',
+
+      '@bp2': {
+        width: '78%',
+      },
     },
   
     h1: {
       fontSize: '7rem',
       color: '$purple500',
       opacity: '30%',
+
+      '@bp3': {
+        fontSize: '4rem',
+      },
     },
   
     span: {
@@ -205,6 +213,11 @@ export const AboutMe = styled('div', {
       position: 'absolute',
       bottom: '0.5rem',
       right: '0.5rem',
+
+      '@bp3': {
+        fontSize: '0.8rem',
+        bottom: '1.5rem',
+      },
     },
 
     p: {
