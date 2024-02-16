@@ -15,14 +15,12 @@ export const Card = styled('main', {
 
    '@bp3': {
      flexDirection: 'column  ',
-     height: '45rem',
      minWidth: 350,
      alignItems: 'center',
    },
 
    '@bp02': {
-    minWidth: 200,
-    height: '32rem',
+    minWidth: 310,
    },
 
 
@@ -51,7 +49,8 @@ export const Card = styled('main', {
       color: '$white',
 
       '@bp02': {
-        fontSize: '$md',
+        fontSize: '$xl',
+        marginTop: '1rem',
        },
     },
 
@@ -60,7 +59,7 @@ export const Card = styled('main', {
       marginBottom: '2rem',
 
       '@bp02': {
-        fontSize: '$ssm',
+        fontSize: '$sm',
        },
     },
 
@@ -68,7 +67,7 @@ export const Card = styled('main', {
       maxWidth: '25rem',
 
       '@bp02': {
-        fontSize: '$ssm',
+        fontSize: '$sm',
         width: 250,
         textAlign: 'center',
         marginBottom: '1rem',
@@ -111,7 +110,7 @@ export const Card = styled('main', {
           },
   
           '@bp02': {
-            fontSize: '$ssm',
+            fontSize: '$sm',
             padding: '0.5rem 1rem',
   
             
@@ -141,7 +140,6 @@ export const Card = styled('main', {
 
     '@bp02': {
       paddingTop: '0',
-      marginTop: '-3rem',
      },
 
     '.device': {
@@ -150,7 +148,7 @@ export const Card = styled('main', {
       },
 
       '@bp02': {
-        width: '16rem',
+        width: '18rem',
        },
     },
   },

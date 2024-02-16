@@ -12,50 +12,64 @@ export const ProjectsContainer = styled('main', {
 })
 
 export const Title = styled('div', {
-    position: 'relative',
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'left',
     height: '8.5rem',
     marginBottom: '3rem',
-    maxWidth: '52%',
+    width: '100%',
 
     '@bp3': {
       justifyContent: 'center',
       maxWidth: '90%',
     },
-    
 
-    h1: {
-      marginBottom: '1rem',
-      fontSize: '10rem',
-      color: '$purple500',
-      opacity: '30%',
+    '.title-container': {
+      width: '52rem',
+      position: 'relative',
 
-      '@bp3': {
-        fontSize: '7rem',
-      },
-
-      '@bp2': {
-        fontSize: '5rem',
-      },
-    },
+      h1: {
+        marginBottom: '1rem',
+        fontSize: '10rem',
+        color: '$purple500',
+        opacity: '30%',
   
-    span: {
-      color: '$purple300',
-      marginBottom: '0.5rem',
-      fontSize: '1rem',
-      position: 'absolute',
-      bottom: '0.5rem',
-      right: '1rem',
-
-      '@bp3': {
-        fontSize: '0.8rem',
-        bottom: '1.5rem',
+        '@bp3': {
+          fontSize: '7rem',
+        },
+  
+        '@bp2': {
+          fontSize: '5rem',
+        },
+  
+        '@bp02': {
+          fontSize: '4.5rem',
+          marginBottom: '1rem',
+        },
       },
-
-      '@bp2': {
-        bottom: '2.2rem',
+    
+      span: {
+        color: '$purple300',
+        marginBottom: '0.5rem',
+        fontSize: '1rem',
+        position: 'absolute',
+        bottom: '4.1rem',
+        right: '1.5rem',
+  
+        '@bp3': {
+          fontSize: '0.8rem',
+          bottom: '3rem',
+          right: '5rem',
+        },
+  
+        '@bp2': {
+          bottom: '2.2rem',
+          right: '1rem',
+        },
+  
+        '@bp02': {
+          display: 'none',
+        }
       },
     },
 })
@@ -69,6 +83,10 @@ export const CardsContainer = styled('div', {
   '@bp2': {
     alignItems: 'center',
   },
+
+  '@bp02': {
+    marginBottom: '10rem',
+  }
 })
 
 export const MoreCard = styled('div', {
@@ -90,7 +108,7 @@ export const MoreCard = styled('div', {
    },
 
    '@bp02': {
-    minWidth: 200,
+    minWidth: 310,
     height: '32rem',
    },
 
@@ -213,7 +231,7 @@ export const MoreCard = styled('div', {
 
     '@bp02': {
       paddingTop: '0',
-      marginTop: '-3rem',
+      marginTop: '4.5rem',
      },
 
     '.device': {

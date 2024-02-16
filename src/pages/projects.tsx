@@ -40,8 +40,10 @@ export default function Projects() {
       </Head>
       <ProjectsContainer>
         <Title>
-          <h1>PROJECTS</h1>
-          <span>Creating beautiful user friendly interface</span>
+          <div className="title-container">
+            <h1>PROJECTS</h1>
+            <span>Creating beautiful user friendly interface</span>
+          </div>
         </Title>
 
         <CardsContainer>
