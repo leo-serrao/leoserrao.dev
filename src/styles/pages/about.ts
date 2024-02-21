@@ -205,6 +205,10 @@ export const AboutMe = styled('div', {
       '@bp3': {
         fontSize: '4rem',
       },
+
+      '@bp02': {
+        fontSize: '3rem',
+      },
     },
   
     span: {
@@ -217,16 +221,29 @@ export const AboutMe = styled('div', {
       '@bp3': {
         fontSize: '0.8rem',
         bottom: '1.5rem',
+        
+      },
+
+      '@bp02': {
+        bottom: '1rem',
+        right: '-3.5rem',
+        fontSize: '0.7rem',
       },
     },
 
     p: {
       maxWidth: 500,
+      marginLeft: '0.5rem',
+
       '@bp4': {
         fontSize: '$ssm',
       },
 
-      marginLeft: '0.5rem',
+      '@bp02': {
+        marginBottom: '3rem',
+        textAlign: 'center',
+      },
+
     },
 
     '.downloads': {
